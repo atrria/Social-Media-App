@@ -23,6 +23,9 @@ sql-doc/
 # META-INF
 src/META-INF/
 
+# Images
+src/main/ui/assets/
+
 # BlueJ files
 *.ctxt
 

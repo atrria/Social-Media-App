@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: #2a283c;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.271" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.welcomeController">
+   <top>
+      <Text fill="#d3d1e3" strokeType="OUTSIDE" strokeWidth="0.0" text="Serwis społecznościowy" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </Text>
+   </top>
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" maxHeight="75.0" spacing="60.0" style="-fx-border-color: #fc8795; -fx-border-radius: 6; -fx-border-width: 2;" stylesheets="@../css/style.css" translateY="-228.0">
+               <children>
+                  <Text fill="#e8586a" onMouseClicked="#zarejestrujVBox" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: HAND;" text="Rejestracja">
+                     <font>
+                        <Font size="54.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow color="#662237" />
+                     </effect>
+                  </Text>
+                  <Text fill="#e8586a" onMouseClicked="#zalogujVBox" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: HAND;" text="Logowanie">
+                     <font>
+                        <Font size="54.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow color="#662237" />
+                     </effect>
+                  </Text>
+               </children>
+               <StackPane.margin>
+                  <Insets left="250.0" right="250.0" />
+               </StackPane.margin>
+            </HBox>
+            <StackPane StackPane.alignment="TOP_CENTER">
+               <children>
+                  <VBox fx:id="rejestracjaVBox" alignment="CENTER" visible="false">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="imieRejestracja">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="280.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="nazwiskoRejestracja">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="280.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="84.0">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasło" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <PasswordField fx:id="hasloRejestracja">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="280.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Data urodzenia" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="data">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="280.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Miasto" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="miasto">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="280.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Krótki opis" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="opis">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="280.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <Button fx:id="rejestracjaButton" mnemonicParsing="false" onAction="#zarejestruj" prefWidth="400.0" text="Rejestruj" textFill="#e5e5ed">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="20.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <StackPane.margin>
+                        <Insets top="5.0" />
+                     </StackPane.margin>
+                  </VBox>
+                  <VBox fx:id="logowanieVBox" alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <Text fill="#ebe4e7" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="imieLogowanie">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="250.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="nazwiskoLogowanie">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="250.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="181.0">
+                           <children>
+                              <Text fill="#e5e5ed" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasło" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Text>
+                              <PasswordField fx:id="hasloLogowanie" translateY="-1.0">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="250.0" top="10.0" />
+                                 </HBox.margin>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onAction="#zaloguj" prefWidth="400.0" style="-fx-background-radius: 10;" stylesheets="@../css/style.css" text="Zaloguj" textFill="#e5e5ed">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="30.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <StackPane.margin>
+                  <Insets top="70.0" />
+               </StackPane.margin>
+            </StackPane>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <Text fill="#a3a3b5" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor: Adrianna Leśna. Wykorzystano ikony www.flaticon.com" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+      </Text>
+   </bottom>
+</BorderPane>

@@ -7,13 +7,15 @@ and many others.
 The data is being stored in a PostgreSQL database using <a href="https://www.elephantsql.com">ElephantSQL Service</a>.
 The PostgreSQL JDBC Driver is being used for database connection.
 <h3>Main application functionalities include:</h3>
-- registering as a new user with a name, last name, city, password and short profile description
-- logging into the application with the name, last name and password corresponding to existing user
-- searching for a specific user in the database
-- adding users as friends
-- editing / updating all user information
-- joining groups
-- following other users.
+<ul>
+    <li>registering as a new user with a name, last name, city, password and short profile description</li>
+    <li>logging into the application with the name, last name and password corresponding to existing user</li>
+    <li>searching for a specific user in the database</li>
+    <li>adding users as friends</li>
+    <li>editing / updating all user information</li>
+    <li>joining groups</li>
+    <li>following other users.</li>
+</ul>
 
 Application supports both English and Polish alphabet.\
 By now users' passwords are being hashed with MD5 algorithm. Changing hashing algorithm is marked as TODO.

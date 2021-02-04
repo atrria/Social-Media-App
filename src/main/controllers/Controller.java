@@ -111,7 +111,7 @@ public class Controller
 		{
 			connection = DriverManager.getConnection(dbaseURL, username, password);
 		}
-		catch (SQLException se)//| IOException se)
+		catch (SQLException se)
 		{
 			System.out.println("Couldn't connect: print out a stack trace and exit.");
 			se.printStackTrace();

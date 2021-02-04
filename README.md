@@ -17,7 +17,13 @@ The PostgreSQL JDBC Driver is being used for database connection.
     <li>following other users.</li>
 </ul>
 
-Application supports both English and Polish alphabet.\
-By now users' passwords are being hashed with MD5 algorithm. Changing hashing algorithm is marked as TODO.
+Application supports both English and Polish alphabet.
 
-<h3>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></h3>
+![main project view](https://github.com/atrria/Social-Media-App/blob/master/images/prtscn1.png "Main application view")
+![profile view](https://github.com/atrria/Social-Media-App/blob/master/images/prtscn2.png "Profile view")
+![followed users view](https://github.com/atrria/Social-Media-App/blob/master/images/prtscn3.png "Followed users view")
+
+Users data have been randomly generated - any resemblance is unintentional.
+Users' passwords are being hashed with MD5 algorithm. Changing hashing algorithm is marked as TODO.
+
+<h3>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>.</h3>

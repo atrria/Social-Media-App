@@ -1,0 +1,105 @@
+.button
+{
+    -fx-background-color: #e8586a;
+}
+
+.button:hover
+{
+    -fx-background-color: #fc8795;
+    -fx-text-fill: #2a283c;
+}
+
+.button:pressed
+{
+    -fx-text-fill: #000000;
+}
+
+.image-view:hover
+{
+    -fx-rotate: -20;
+}
+
+.image-view:pressed
+{
+    -fx-rotate: -25;
+}
+
+.list-cell
+{
+    -fx-background-color: #1F1E2F;
+    -fx-alignment: center;
+    -fx-font-size: 24;
+    -fx-text-fill: #d3d1e3;
+    -fx-text-alignment: center;
+    -fx-background-radius: 10;
+    -fx-graphic-text-gap: 20;
+    -fx-padding: 10;
+}
+
+.list-cell:empty
+{
+    visibility:hidden;
+}
+
+.list-cell:hover
+{
+    -fx-background-color: #4b4a6d;
+}
+
+.list-cell:pressed
+{
+    -fx-background-color: #716fb0;
+    -fx-text-fill: #1F1E2F;
+}
+
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track
+{
+    -fx-background-color: #1F1E2F;
+    -fx-border-color: transparent;
+    -fx-background-radius : 0.0em;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:vertical .decrement-button,
+.scroll-bar:horizontal .decrement-button
+{
+    -fx-background-radius : 0.0em;
+    -fx-padding: 0.0 25.0 0.0 0.0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape : "";
+    -fx-padding: 0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:horizontal .increment-arrow,
+.scroll-bar:vertical .decrement-arrow,
+.scroll-bar:horizontal .decrement-arrow
+{
+    -fx-shape: "";
+    -fx-background-color: #1F1E2F;
+}
+
+.scroll-bar:vertical .corner,
+.scroll-bar:horizontal .corner
+{
+    -fx-background-color :transparent;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb
+{
+    -fx-background-color: #e8586a;
+    -fx-background-radius : 2.0em;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover
+{
+    -fx-background-color: #f37988;
+    -fx-background-radius: 2.0em;
+}

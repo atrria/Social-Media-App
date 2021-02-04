@@ -71,7 +71,7 @@ public class Controller
 	 * @param pass podane hasło w oryginalnej postaci
 	 * @return zahaszowane hasło
 	 */
-	public String hashPassword(String pass)
+	protected String hashPassword(String pass)
 	{
 		// TODO SHA256 instead of MD5
 		String hashPass = "";
@@ -104,7 +104,7 @@ public class Controller
 	 *
 	 * @return połączenie z bazą w przypadku powodzenia, null w przeciwnym wypadku
 	 */
-	public Connection establishConnection()
+	protected Connection establishConnection()
 	{
 		Connection connection = null;
 		try

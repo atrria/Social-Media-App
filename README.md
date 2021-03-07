@@ -6,7 +6,6 @@ and many others.
 
 The data is being stored in a PostgreSQL database using <a href="https://www.elephantsql.com">ElephantSQL Service</a>.
 The PostgreSQL JDBC Driver is being used for database connection.
-<h3>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>.</h3>
 
 <h3>Main application functionalities include:</h3>
 <ul>
@@ -20,6 +19,7 @@ The PostgreSQL JDBC Driver is being used for database connection.
 </ul>
 
 Application supports both English and Polish alphabet.
+<h3>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>.</h3>
 
 ![main project view](https://github.com/atrria/Social-Media-App/blob/master/images/prtscn1.png "Main application view")
 ![profile view](https://github.com/atrria/Social-Media-App/blob/master/images/prtscn2.png "Profile view")

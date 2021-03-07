@@ -9,7 +9,7 @@ The PostgreSQL JDBC Driver is being used for database connection.
 <h3>Main application functionalities include:</h3>
 <ul>
     <li>registering as a new user with a name, last name, city, password and short profile description</li>
-    <li>logging into the application with the name, last name and password corresponding to existing user</li>
+    <li>logging into the application with name, last name and password corresponding to an existing user</li>
     <li>searching for a specific user in the database</li>
     <li>adding users as friends</li>
     <li>editing / updating all user information</li>

@@ -6,6 +6,8 @@ and many others.
 
 The data is being stored in a PostgreSQL database using <a href="https://www.elephantsql.com">ElephantSQL Service</a>.
 The PostgreSQL JDBC Driver is being used for database connection.
+<h3>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>.</h3>
+
 <h3>Main application functionalities include:</h3>
 <ul>
     <li>registering as a new user with a name, last name, city, password and short profile description</li>
@@ -25,5 +27,3 @@ Application supports both English and Polish alphabet.
 
 Users data have been randomly generated - any resemblance is unintentional.
 Users' passwords are being hashed with MD5 algorithm. Changing hashing algorithm is marked as TODO.
-
-<h3>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>.</h3>
